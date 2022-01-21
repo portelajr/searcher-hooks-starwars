@@ -51,6 +51,7 @@ function PlanetsProvider({ children }) {
   const handleSelectedFilters = (object) => {
     const repeated = filters.filterByNumericValues
       .some((prev) => prev.column === object.column);
+
     if (!repeated) setSelectedFilters(object);
   };
 

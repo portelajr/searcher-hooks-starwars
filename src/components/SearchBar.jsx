@@ -64,7 +64,9 @@ function SearchBar() {
     const actualFilters = filterByNumericValues.map((filter) => filter.column);
     const filteredSelects = pattern
       .filter((select) => !actualFilters.includes(select));
+
     setCurrentFilters(actualFilters);
+
     return setValueSelect(filteredSelects);
   };
 
